@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sigmar+One&display=swap');
 
 /* Application-wide Styles */
+
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
   color: #369;
   font-family: 'Inter', Helvetica, sans-serif;
@@ -12,13 +25,21 @@ h2, h3 {
   font-family: 'Inter', Helvetica, sans-serif;
   font-weight: lighter;
 }
+
 body {
-  margin: 2em;
+  font-size: 16px;
+  height: 100vh;
+  background-color: #0F1E2D;
+  background-image: url("../src/assets/img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 body, input[type="text"], button {
   color: #333;
   font-family: 'Inter', Georgia, serif;
 }
+
 button {
   background-color: #000;
   border: none;
@@ -31,6 +52,7 @@ button {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
+
 button:hover {
   background-color: black;
   color: white;
