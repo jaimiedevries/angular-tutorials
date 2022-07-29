@@ -9,6 +9,6 @@
 }
 
 .container {
-  width: min(100% - 2rem, 72rem);
+  width: min(100% - 2rem, 80rem);
   margin-inline: auto;
 }
