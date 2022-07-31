@@ -1,0 +1,79 @@
+/* DashboardComponent's private CSS styles */
+
+h2 {
+  text-align: center;
+}
+
+.heroes-menu {
+  padding: 0;
+  margin: auto;
+  max-width: 1000px;
+
+  /* flexbox */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.section {
+  padding: 10rem 0;
+}
+a {
+  background: rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.12);
+backdrop-filter: blur(14px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 8px;
+  padding: .5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  min-width: 70px;
+  box-sizing: border-box;
+
+  /* flexbox */
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  transition: .1s ease-in;
+}
+
+.hero-container {
+  position: relative;
+}
+
+.hero-container img {
+  border-radius: 4px;
+}
+
+.hero__details {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  padding: 1rem;
+  background: linear-gradient(360deg, #000000 40.1%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  bottom: 0.27rem;
+  border-radius: 4px;
+}
+
+@media (min-width: 600px) {
+  a {
+    width: 18%;
+    box-sizing: content-box;
+  }
+}
+
+a:hover {
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
