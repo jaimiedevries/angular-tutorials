@@ -1,0 +1,12 @@
+
+<div class="heroes-menu section">
+  <a class="hero" *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+    <div class="hero-container">
+      <img src="https://www.superherodb.com/pictures2/portraits/10/100/133.jpg">
+      <div class="hero__details">
+        {{hero.name}}
+        {{hero.emoji}}
+      </div>
+    </div>
+  </a>
+</div>

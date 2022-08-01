@@ -1,7 +1,13 @@
 <div class="container">
   <h3 class="app-titel">{{title}}</h3>
-  <app-heroes></app-heroes>
-  <app-messages></app-messages>
+  <nav>
+    <a routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}">Dashboard</a>
+    <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+    <a routerLink="/favorites" routerLinkActive="active">Favorites</a>
+  </nav>
+    <router-outlet></router-outlet>
+    <app-messages></app-messages>
 </div>
 
 
